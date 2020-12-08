@@ -1,0 +1,66 @@
+Git Created by Linus Torvald
+Git is Distributed Version System
+Trunk based Development
+Create Account on github
+Install git for windows
+
+open gitbash
+$ git config --global user.name Chintan
+$ git config --global user.email coronainspiration@gmail.com
+$ git config --global user.name
+$ git config --global user.email
+
+$ git init
+$ git status
+$ git add -A or filename --> Add files to stagging area
+$ git status
+$ git reset HEAD -- . or $ git reset HEAD -- filename --> Unstage the files
+$ git commit
+        file will be open in editer. Add message save and close.
+$ git commit -m "message" --> file will not be open in editor
+$ git checkout filename --> revert the files to the last commit
+$ git checkout -f --> revert all files to the last commit
+$ git log
+$ git log -p -2 --> will show last 2 commit 'q' for quit
+$ clear --> clear git terminal
+$ git diff --> compare working directory and staging area
+$ git diff --staged --> compare staging area and commited area
+$ git checkout -f --> making working directory same as last commit
+$ git commit -a -m "msg" --> Directly commit without going to staging area.
+$ ls --> list files
+$ git rm --cached filename --> remove file from staging area but remain in working directory
+$ git rm filename --> remove file from staging area and working directory
+$ git status -s --> show status in short first char : staging area, second char : working tree
+$ touch .gitignore --> create file .gitignore the listed file will be ignore for staging
+
+Branches
+--------
+$ git branch branchName --> Create branch
+$ git branch --> list Branches
+$ git checkout branchName --> Switch to branchName
+$ git merge branchName --> branchName branch merge with branch in we working
+$ git checkout -b branchName --> create new branch and switch to new branch
+
+Github
+------
+$ git remote add origin PathToGitRepository
+$ git remote
+$ git remote -v
+$ git push origin master
+$ git remote remove origin
+In case of following error :
+remote: Permission to coronainspiration/corona-notification.git denied to vidumailbox.
+go to Control Panel\User Accounts\Credential Manager
+in generic Credential edit username and passward
+
+Creating Github Repositary
+---------------------------
+
+
+Creating Branch in Github Pull request merge
+--------------------------------------------
+
+
+
+Github fork
+------------
